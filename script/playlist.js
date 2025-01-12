@@ -1,6 +1,6 @@
 // Spotify API credentials (replace with your own credentials)
-const clientId = 'c49cde61062b4cf9b744f3e0edc95fcd';
-const clientSecret = '4fb29faca8064148acf6c3a3aaca3779';
+const clientId = '';
+const clientSecret = '';
 
 // Function to get Spotify access token
 async function getAccessToken() {
