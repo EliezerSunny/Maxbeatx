@@ -206,19 +206,25 @@
 		    	<h5>Share this:</h5>
 		    	<div class="share-button">
 		    		
-		    		<a href="https://twitter.com/intent/tweet/?text=Ayra Starr - Rush&url=https://maxbeatx.netlify.app/nigeria-music/ayra-starr-rush" target="_blank"><button><i class="fa fa-twitter" style="color: #00acee;"></i> Twitter</button></a>
-		    	    
-		    	    
-		    	    <a href="https://facebook.com/sharer/sharer.php?u=/https://maxbeatx.netlify.app/nigeria-music/ayra-starr-rush" target="_blank">
-		    		<button><i class="fa fa-facebook" style="color: #3b5998;"></i> Facebook</button></a>
+		    		<button><i class="fa fa-share" style="color: #00acee;"></i> Share</button>
 		    		
-		    		
-		    		<a href="whatsapp://send?text=Ayra Starr - Rush https://maxbeatx.netlify.app/nigeria-music/ayra-starr-rush" target="_blank">
-		    		<button><i class="fa fa-whatsapp" style="color: #075e54;"></i> WhatsApp</button></a>
-		    		
-		    		
-		    		<a href="https://telegram.me/share/url?text=https://maxbeatx.netlify.app/nigeria-music/ayra-starr-rush" target="_blank">
-		    		<button><i class="fa fa-telegram" style="color: #0088cc;"></i> Telegram</button></a>
+<script>
+function shareLink() {
+  const shareData = {
+    title: 'Ayra Starr - Rush',
+    text: 'MaxBeatx is the best website with the best hit music from Nigeria and around the world.',
+    url: 'https://maxbeatx.netlify.app/nigeria-music/ayra-starr-rush'
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData)
+      .then(() => console.log('Link shared successfully'))
+      .catch((error) => console.error('Error sharing', error));
+  } else {
+    alert('Share not supported on this browser. Please copy the link manually.');
+  }
+}
+</script>
 		    		
 		    	</div>
 		    </div>

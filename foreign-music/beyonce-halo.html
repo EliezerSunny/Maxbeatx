@@ -19,18 +19,17 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet" type="text/css" href="comments.css">
 
-    <meta name="og:description" content="Download All the Latest Music mp3, Videos" />
-    <meta name="keywords" content="Latest World Max Musics and Videos,">
-	<meta name="author" content="Eliazer Adetunji" />
-	<meta name="TitleImage" content="https://raw.githubusercontent.com/EliezerSunny/Maxbeatx/refs/heads/main/foreign-music/img/beyonce-halo.png" />
-
-	<meta property="og:local" content="en_US" />
+    <!-- Open Graph Meta Tags -->
+	<meta property="og:locale" content="en_US" />
 	<meta property="og:type" content="website" />
-	<meta property="og:title" content="Music is life - MaxBeatx" />
-	<meta property="article:publisher" content="https://m.facebook.com/maxbeatx/" />
-	<meta property="og:image" content="https://raw.githubusercontent.com/EliezerSunny/Maxbeatx/refs/heads/main/foreign-music/img/beyonce-halo.png" />
-	<meta property="og:url" content="https://www.maxbeatx.com" />
+	<meta property="og:title" content="Halo - Beyounce (MaxBeatx)" />
+	<meta property="og:description" content="MaxBeatx is the best website with the best hit music from Nigeria and around the world." />
+<meta name="author" content="Eliazer Adetunji" />
 	<meta property="og:site_name" content="MaxBeatx" />
+	
+	<meta property="og:image" content="https://raw.githubusercontent.com/EliezerSunny/Maxbeatx/refs/heads/main/img/beyonce-halo.png" />  
+	<meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
 
 	<!--- IMG LOADER --->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
@@ -293,20 +292,27 @@ I can see your halo (halo), halo
 		    	<h5>Share this:</h5>
 		    	<div class="share-button">
 		    		
-		    		<a href="https://twitter.com/intent/tweet/?text=Beyonce - Halo&url=/foreign-music/beyonce-halo" target="_blank">
-		    		<button><i class="fa fa-twitter" style="color: #00acee;"></i> Twitter</button></a>
+		    		
 		    	    
-		    	    
-		    	    <a href="https://facebook.com/sharer/sharer.php?u=/foreign-music/beyonce-halo" target="_blank">
-		    		<button><i class="fa fa-facebook" style="color: #3b5998;"></i> Facebook</button></a>
+		    	    <button><i class="fa fa-share" style="color: #00acee;"></i> Share</button>
 		    		
-		    		
-		    		<a href="whatsapp://send?text=Beyonce - Halo /foreign-music/beyonce-halo" target="_blank">
-		    		<button><i class="fa fa-whatsapp" style="color: #075e54;"></i> WhatsApp</button></a>
-		    		
-		    		
-		    		<a href="https://telegram.me/share/url?text=Beyonce - Halo&url=/foreign-music/beyonce-halo" target="_blank">
-		    		<button><i class="fa fa-telegram" style="color: #0088cc;"></i> Telegram</button></a>
+<script>
+function shareLink() {
+  const shareData = {
+    title: 'Beyonce - Halo',
+    text: 'MaxBeatx is the best website with the best hit music from Nigeria and around the world.',
+    url: 'https://maxbeatx.netlify.app/foreign-music/beyonce-halo'
+  };
+
+  if (navigator.share) {
+    navigator.share(shareData)
+      .then(() => console.log('Link shared successfully'))
+      .catch((error) => console.error('Error sharing', error));
+  } else {
+    alert('Share not supported on this browser. Please copy the link manually.');
+  }
+}
+</script>
 		    		
 		    	</div>
 		    </div>
